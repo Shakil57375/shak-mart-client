@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-import backgroundImage from "../assets/Sky-Stars-Pattern.jpg"; 
+import backgroundImage from "../../assets/Sky-Stars-Pattern.jpg"; 
 import { ImPower } from "react-icons/im";
 const MarqueeHead = () => {
   return (

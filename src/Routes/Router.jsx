@@ -1,27 +1,52 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Main from "../Main/Main";
-import Login from "../pages/Login/Login";
-import Register from "../pages/Register/Register";
+import Mens from "../pages/Mens/Mens";
+import Womens from "../pages/Womens/Womens";
+import Kids from "../pages/Kids/Kids";
+import Collections from "../pages/Collections/Collections";
+import Trending from "../pages/Trending/Trending";
+import Login from "../Authentication/Login/Login";
+import Register from "../Authentication/Register/Register";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
-    children : [
+    children: [
       {
-        path : "/",
-        element : <App></App>
+        path: "/",
+        element: <App></App>,
       },
       {
-        path : "/login",
-        element : <Login></Login>
+        path: "/login",
+        element: <Login/>,
       },
       {
-        path : "/register",
-        element : <Register/>
-      }
-    ]
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/mens",
+        element: <Mens />,
+      },
+      {
+        path: "/womens",
+        element: <Womens />,
+      },
+      {
+        path: "/kids",
+        element: <Kids />,
+      },
+      {
+        path: "/collections",
+        element: <Collections />,
+      },
+      {
+        path: "trending",
+        element: <Trending />,
+      },
+    ],
   },
 ]);
 

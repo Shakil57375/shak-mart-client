@@ -46,7 +46,7 @@ const Navbar = () => {
                 id="search"
                 placeholder="Search something.."
               />
-              <div className="grid place-items-center h-full w-12 text-orange-600">
+              <div className="grid place-items-center h-full w-12 text-orange-600 cursor-pointer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -67,20 +67,20 @@ const Navbar = () => {
         </div>
         <div className="basis1/4">
           <div className="flex items-center justify-between gap-4 lg:gap-16">
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center cursor-pointer ">
               <AiOutlineHeart className="text-white w-5 h-5 lg:w-10 lg:h-10"></AiOutlineHeart>
               <p className="text-white text-sm lg:text-base font-light lg:font-medium">
                 Wish
               </p>
             </div>
-            <div className="flex flex-col relative items-center justify-center">
+            <div className="flex flex-col relative items-center justify-center cursor-pointer">
               <span className="flex items-center">
                 <BsCart className="text-white w-5 h-5 lg:w-10 lg:h-10"></BsCart>{" "}
                 <span className="absolute -top-3 -right-2 bg-white text-orange-500 px-1  rounded-full">
                   0
                 </span>
               </span>
-              <p className="text-white text-sm lg:text-base font-light lg:font-medium">
+              <p className="text-white  text-sm lg:text-base font-light lg:font-medium">
                 Cart
               </p>
             </div>

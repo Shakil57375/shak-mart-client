@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone",
+    "brand": "TechCo",
+    "price": 499.99,
+    "discountPrice": 449.99,
+    "stock": 100,
+    "inStock": true,
+    "category": "Electronics",
+    "description": "A powerful smartphone with advanced features for seamless connectivity and stunning photography.",
+    "features": [
+      "5G connectivity",
+      "High-resolution camera",
+      "Fingerprint sensor"
+    ],
+    "rating": 4.5,
+    "location": "TechCo Store",
+    "main_image": "smartphone_main.jpg",
+    "sample_one": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/10/samung-quad-cameras.jpg?ssl=1&quality=80&w=f",
+    "sample_two": "https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2022/03/Samsung-Galaxy-S22-Ultra-review-12-scaled.jpg?ssl=1",
+    "sample_three": "https://images.samsung.com/uk/smartphones/galaxy-s23/buy/03_Color_Selection/S23_Basic_Color/S23_Cream_MO.png",
+    "sample_four": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWepIc-92wz_AsLJFCCkzaQBE10uAR6aQeArOt5EMUrRy9gg86bEYYp5AFFFLZ_ujyb-E&usqp=CAU"
+  },
+  {
+    "id": 2,
+    "name": "Laptop",
+    "brand": "LapTech",
+    "price": 1099.99,
+    "discountPrice": 999.99,
+    "stock": 50,
+    "inStock": true,
+    "category": "Computers",
+    "description": "A high-performance laptop with a large display and powerful specifications for productivity and entertainment.",
+    "features": ["15-inch display", "8GB RAM", "256GB SSD"],
+    "rating": 4.2,
+    "location": "LapTech Store",
+    "main_image": "https://computermania-bd.b-cdn.net/wp-content/uploads/123900-Galaxy-Book-Pro.jpg",
+    "sample_one": "https://istockbd.com/cdn/shop/products/Galaxy_Book2_Pro_360_price_in_Bangladesh.jpg?v=1654347911",
+    "sample_two": "laptop_sample2.jpg",
+    "sample_three": "https://brotherselectronicsbd.com/image/cache/catalog/demo/product/Samsung/Book%20S/Book-S-5-800x800.png",
+    "sample_four": "https://www.tejar.pk/media/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/s/a/samsung_13.3_galaxy_book_s_1-_tejar.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fitness Tracker",
+    "brand": "FitGear",
+    "price": 79.99,
+    "discountPrice": 69.99,
+    "stock": 200,
+    "inStock": true,
+    "category": "Wearable Tech",
+    "description": "Stay fit and healthy with this feature-packed fitness tracker that monitors your heart rate, sleep, and more.",
+    "features": ["Heart rate monitor", "Sleep tracking", "Water-resistant"],
+    "rating": 4.0,
+    "location": "FitGear Store",
+    "main_image": "https://executiveample.com/wp-content/uploads/2023/11/Fitbit-Charge-6-Fitness-Tracker-with-Google-Apps.webp",
+    "sample_one": "https://pimcdn.sharafdg.com/cdn-cgi/image/width=600,height=600,fit=pad/images/S100681751_1?1702910490",
+    "sample_two": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi0yXT0EL3ddRm-K4zLC9tZb85Hv8lJboKkq25j5WgC50lECNcJ0nnYK0NiQZKzEHJFeg&usqp=CAU",
+    "sample_three": "https://mobileimages.lowes.com/productimages/a5b24d13-314e-4795-b9cb-63d9440cd664/45443905.jpg",
+    "sample_four": "https://m.media-amazon.com/images/I/61u7yLt52+L._AC_UF1000,1000_QL80_.jpg"
+  }
+]

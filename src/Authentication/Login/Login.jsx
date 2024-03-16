@@ -115,9 +115,9 @@ const Login = () => {
                 onClick={() => setShow(!show)}
               >
                 {show ? (
-                  <FaEyeSlash className="w-5 h-5"></FaEyeSlash>
-                  ) : (
                   <FaEye className="w-5 h-5"></FaEye>
+                  ) : (
+                  <FaEyeSlash className="w-5 h-5"></FaEyeSlash>
                 )}
               </p>
               <a

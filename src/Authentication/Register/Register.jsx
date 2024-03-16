@@ -13,14 +13,12 @@ const Register = () => {
   const { handleRegister, updateUser } = useContext(AuthContext);
   const [show, setShow] = useState(false);
   const location = useLocation();
-
   useTitle("Register");
   useEffect(() => {
     AOS.init({
       duration: 1200,
     });
   }, []);
-  const from = location.state?.from?.pathname || "/";
   const navigate = useNavigate();
   const handleSignUp = (event) => {
     event.preventDefault();
@@ -39,7 +37,7 @@ const Register = () => {
     })
       .then((res) => res.json())
       .then((imageData) => {
-        const imageURL = imageData.data.display_url;
+        const imageURL = imageData?.data?.display_url;
         handleRegister(email, password)
           .then((result) => {
             const user = result.user;
@@ -47,7 +45,7 @@ const Register = () => {
             console.log(user);
             updateData(result.user, name, imageURL);
             toast("registered successfully");
-            navigate(from, { replace: true });
+            navigate("/login");
           })
           .catch((error) => {
             console.log(error.message);
@@ -133,9 +131,9 @@ const Register = () => {
                 onClick={() => setShow(!show)}
               >
                 {show ? (
-                  <FaEyeSlash className="w-5 h-5"></FaEyeSlash>
-                ) : (
                   <FaEye className="w-5 h-5"></FaEye>
+                  ) : (
+                  <FaEyeSlash className="w-5 h-5"></FaEyeSlash>
                 )}
               </p>
             </div>

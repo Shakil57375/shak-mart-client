@@ -1,15 +1,27 @@
+import { useState } from "react";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import  products  from "../../database/data.json";
+import allProducts from "../../database/data.json";
 const Trending = () => {
-  console.log(products);
+  const [products, setProducts] = useState(allProducts);
+  const handleFav = (id) => {
+    setProducts(
+      products.map((product) => {
+        if (product.id === id) {
+          return { ...product, isFav: !product.isFav };
+        } else {
+          return product;
+        }
+      })
+    );
+  };
   return (
     <div>
-      <p className="text-center text-4xl font-bold my-4">Trending Products</p>
-      {
-        products.map(product =>(
-          <ProductCard key={product.id} product = {product} />
-        ))
-      }
+      <p className="text-center text-4xl font-bold my-4 ">Trending Products</p>
+      <div className="grid grid-cols-3">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} onFav={handleFav} />
+        ))}
+      </div>
     </div>
   );
 };

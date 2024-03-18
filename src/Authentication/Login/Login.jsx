@@ -115,9 +115,9 @@ const Login = () => {
                 onClick={() => setShow(!show)}
               >
                 {show ? (
-                  <FaEye className="w-5 h-5"></FaEye>
-                  ) : (
                   <FaEyeSlash className="w-5 h-5"></FaEyeSlash>
+                  ) : (
+                  <FaEye className="w-5 h-5"></FaEye>
                 )}
               </p>
               <a
@@ -128,7 +128,7 @@ const Login = () => {
               </a>
             </div>
             <div className="form-control mt-6">
-              <input className="button" type="submit" value="Login" />
+              <button className>login</button>
             </div>
             <div className="divider">OR</div>
             <div className="mb-3">

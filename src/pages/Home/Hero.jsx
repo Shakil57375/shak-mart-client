@@ -20,7 +20,7 @@ const Hero = () => {
         <div className="lg:basis-1/2 basis-full">
           <img
             className="w-full h-[600px] md:rounded-lg"
-            src="https://i.ibb.co/YT4WpdL/online-fashion-shopping.png"
+            src="https://i.ibb.co/ckfd2hN/50338-removebg-preview.png"
             alt="Hero Image"
           />
         </div>
